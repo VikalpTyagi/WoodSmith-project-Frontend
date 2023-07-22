@@ -1,0 +1,24 @@
+    <mat-toolbar class="backColor">
+      <div routerLink="homepage">
+        <img style="border-radius: 40px;" src="../../assets/furniture.png">
+        WoodSmiths
+      </div>
+      <div class="home">
+        <!-- <button routerLink="homepage" mat-stroked-button >    
+          <mat-icon>home</mat-icon>
+        </button>  -->
+        <button routerLink="reg-form" mat-icon-button class="example-icon favorite-icon">
+          <mat-icon>people</mat-icon>
+        </button>
+        
+        <button *ngIf="!rs.logged" routerLink="login" mat-icon-button class="example-icon favorite-icon">
+          <mat-icon>login</mat-icon>
+        </button>
+        
+        <button (click)="logout()" *ngIf="rs.logged" mat-icon-button class="example-icon favorite-icon">
+          <mat-icon>logout</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
+
+

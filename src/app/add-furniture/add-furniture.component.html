@@ -1,0 +1,34 @@
+<form (ngSubmit)="onSave()" class="form" [formGroup]="furnitureFg">
+    <fieldset>
+        <mat-card class="shipping-card">
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <input matInput type="number" formControlName="id" placeholder="id">
+                        <mat-error *ngIf="furnitureFg.controls['id'].hasError('required')">
+                            Please Enter id
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <input matInput type="text" formControlName="name" placeholder="Name">
+                        <mat-error *ngIf="furnitureFg.controls['name'].hasError('required')">
+                            Please Enter Title
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="row">
+                <mat-form-field appearance="fill">
+                    <input matInput type="text" formControlName="price" placeholder="Price">
+                    <mat-error *ngIf="furnitureFg.controls['price'].hasError('required')">
+                        Please Add Content
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <button color="primary" mat-raised-button type="submit" [disabled]="!furnitureFg.valid">Save</button>
+        </mat-card>
+    </fieldset>
+</form>

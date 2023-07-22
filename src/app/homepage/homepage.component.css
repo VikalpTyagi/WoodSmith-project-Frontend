@@ -1,0 +1,30 @@
+.example-card {
+    max-width: 350px;
+    text-align: center;
+    margin: 15px;
+    padding: 12px;
+    background-color: #B4CDE6;
+}
+.centre{
+    margin-top: 50px;
+    margin-left: 45%;
+}
+img
+{
+    width: 350px;
+    height: 300px;
+}
+mat-card-title
+{
+    background-color: #628E90;
+    margin: 0;
+    padding: 3%;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+::ng-deep .color
+{
+    background: #444 !important;
+    color: red;
+}

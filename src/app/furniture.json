@@ -1,0 +1,75 @@
+{
+  "furnitures": [
+    {
+      "id": 2,
+      "name": "sofa",
+      "price": "66"
+    },
+    {
+      "id": 3,
+      "name": "table",
+      "price": "44"
+    },
+    {
+      "id": 4,
+      "name": "almirah",
+      "price": "444"
+    },
+    {
+      "id": 5,
+      "name": "stool",
+      "price": "55"
+    },
+    {
+      "id": 6,
+      "name": "chair",
+      "price": "555"
+    },
+    {
+      "id": 7,
+      "name": "desk",
+      "price": "556"
+    },
+    {
+      "id": 8,
+      "name": "dresser",
+      "price": "445"
+    }
+  ],
+  "registrations": [
+    {
+      "firstName": "rohan",
+      "lastName": "gupta",
+      "email": "rohan@gmail.com",
+      "password": "Rohan@123",
+      "cPassword": "Rohan@123",
+      "gender": "male",
+      "age": "44",
+      "phoneNumber": "9876543210",
+      "address": {
+        "street": "rrrr",
+        "city": "kan",
+        "state": "ggfgvg",
+        "zipCode": "123456"
+      },
+      "id": 1
+    },
+    {
+      "firstName": "rohan",
+      "lastName": "gupta",
+      "email": "rohan@gmail.com",
+      "password": "Rohan@123",
+      "cPassword": "Rohan@123",
+      "gender": "male",
+      "age": "8",
+      "phoneNumber": "9876543210",
+      "address": {
+        "street": "kkkk",
+        "city": "gfgfg",
+        "state": "ggfgvg",
+        "zipCode": "123456"
+      },
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+
+ a {
+  color: white;
+  text-decoration: none;
+  margin-left:20px ;
+    
+}
+.home {
+  border: none;
+  margin-left: 70%;
+}
+.example-icon{
+  margin-left: 20px;
+}
+span{
+  margin-left: 20px;
+ }
+
+img
+{
+height: 60px;
+padding-left: 10px;
+}
+.backColor
+{
+  background-color: #1A120B;
+}

@@ -1,0 +1,24 @@
+<div class="row ms-4">
+  <mat-card *ngFor="let obj of furnitureList" class="example-card me-3 shadow-lg bg-body rounded-4">
+    <img src="../../assets/{{obj?.name}}.jpg" alt="" width="280px" height="250px" class="pb-4">
+
+    <mat-card-title class="text-dark">
+      {{obj.name}}
+    </mat-card-title>
+    <mat-card-content  class="text-dark">
+      <h3>
+        <p>Price : {{obj.price}} $</p>
+      </h3>
+    </mat-card-content>
+    <mat-card-actions class="pb-3">
+      <button mat-mini-fab color="warn" class="me-5 " routerLink="/delete-furniture/{{obj.id}}">
+        <mat-icon>delete</mat-icon>
+      </button>
+      <button mat-mini-fab color="accent" routerLink="/edit-furniture/{{obj.id}}">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+<button mat-raised-button color="primary" class="centre" routerLink="/add-furniture">Add Furniture</button>

@@ -1,0 +1,35 @@
+<app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+
+
+<div class="row ms-5">
+  <mat-card *ngFor="let obj of furnitureList" class="example-card me-4 shadow-lg rounded-5 p-0">
+
+    <mat-card-title class="text-dark fw-bolder">
+      {{obj.name}}
+    </mat-card-title>
+    <mat-card-content>
+      <div>
+        <img src="../../assets/{{obj?.name}}.jpg" alt="" width="200px" height="250px" class="pb-4">
+      </div>
+      <div>
+        <h3>
+          <p class="text-dark">Price :{{obj.price}} ₹</p>
+        </h3>
+      </div>
+      <div class="text-dark p-2">
+        <h3 class="text-primary">Product Description : </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas veniam quidem odio et repudiandae,
+          quasi pariatur deserunt nemo esse harum aliquam, quos qui facere nesciunt consectetur? Deleniti,
+          perspiciatis reprehenderit!
+        </p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="pb-3">
+      <button mat-mini-fab (click)="onAddToCart()">
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+
+    </mat-card-actions>
+  </mat-card>
+
+</div>

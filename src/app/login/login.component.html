@@ -1,0 +1,41 @@
+<form class="form" (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <mat-card class="shipping-card">
+        <mat-card-header class="align-center" >
+            <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <input matInput placeholder="Email ID" type="email" id="email" name="email"
+                            [(ngModel)]="user.email" required #email="ngModel">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <input matInput type="password" placeholder="Password" id="password" name="password"
+                            [(ngModel)]="user.password" required #password="ngModel">
+                    </mat-form-field>
+                </div>
+
+                <div class="col">
+                    <label>Role</label>
+                    <mat-radio-group aria-label="Select Role" class="radio-group" [(ngModel)]="user.role" id="role"
+                        name="role" required #role="ngModel">
+                        <mat-radio-button class="radio-button" [checked]="true" value="admin">Admin</mat-radio-button>
+                        <mat-radio-button class="radio-button" value="Customer">Customer</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button color="primary" mat-button mat-raised-button [disabled]="!userForm.valid"
+                type="submit">Submit</button>
+            <button color="accent" mat-button mat-raised-button routerLink="/reg-form"
+                type="submit">SignUp</button>
+        </mat-card-actions>
+    </mat-card>
+</form>
